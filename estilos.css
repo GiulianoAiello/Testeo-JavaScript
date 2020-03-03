@@ -1,6 +1,6 @@
-/*.cambia {
-  background-color: black;
-}*/
+.cambia {
+  background-image: url(https://cdn.hipwallpaper.com/i/67/5/cK0jh9.jpg);
+}
 .imágen {
   height: 600px;
   margin-top: 50px;
@@ -10,7 +10,6 @@
 }
 body {
   background-image: url(https://cdn.suwalls.com/wallpapers/digital-art/penguins-in-antarctica-19179-2560x1440.jpg);
-  background-color: grey;
   background-size: cover;
   min-width: 800px;
 }

@@ -11,12 +11,18 @@
   </head>
   <body class="body">
     <img src="depana.png" class="imágen" />
-    <form action="post" id="formulario" />
+    <form id="formulario" />
     <div id="bienvenido" class="mensaje"></div>
     <form id="formulario" method="post">
-      <label>Tu nombre: <input type="text" id="nombre" maxlength="20"/></label>
       <label
-        >Año en el que naciste:<input type="text" id="fecha" maxlength="4"
+        >Tu nombre: <input type="text" value="" id="nombre" maxlength="20"
+      /></label>
+      <label
+        >Año en el que naciste:<input
+          type="text"
+          value=""
+          id="fecha"
+          maxlength="4"
       /></label>
       <button type="submit">Envíar</button>
     </form>
