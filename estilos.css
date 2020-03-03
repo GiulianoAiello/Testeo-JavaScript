@@ -1,21 +1,35 @@
 /*.cambia {
   background-color: black;
 }*/
+.imágen {
+  height: 600px;
+  margin-top: 50px;
+  margin-left: 100px;
+  position: absolute;
+  opacity: 40%;
+}
+body {
+  background-image: url(https://cdn.suwalls.com/wallpapers/digital-art/penguins-in-antarctica-19179-2560x1440.jpg);
+  background-color: grey;
+  background-size: cover;
+  min-width: 800px;
+}
 form {
-  background-color: #34495e;
+  background-color: #fff;
   width: 20%;
-  bottom: 15em;
-  left: 35em;
+  margin-top: 175px;
+  margin-right: 30px;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;
   border-radius: 20px;
   transition: 2s;
   min-width: 250px;
+  float: right;
 }
 label {
   text-align: center;
-  color: white;
+  color: #34495e;
   font-family: Spartan;
   font-size: 11px;
   user-select: none;
@@ -26,37 +40,34 @@ input {
   margin-left: 55px;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: #34495e;
+  background-color: #fff;
   border-style: solid;
   border-top: 0;
   border-left: 0;
   border-right: 0;
   border-bottom-width: thick;
   border-radius: 20px;
-  color: white;
-  border-color: white;
+  color: #34495e;
+  border-color: #34495e;
   user-select: contain;
 }
 
 button {
-  color: white;
-  background-color: #34495e;
+  color: #34495e;
+  background-color: #fff;
   font-family: Spartan;
   font-size: 17px;
   padding: 10px;
   margin-top: 30px;
   border-style: solid;
-  border-top-color: #ffffff;
-  border-bottom-color: #ebf2f4;
-  border-right-color: #ebf2f4;
-  border-left-color: #dee1e2;
+  border-color: #34495e;
   border-width: 2px;
   border-radius: 30px;
   transition: 2s;
   user-select: none;
 }
 button:hover {
-  color: #34495e;
-  background-color: white;
+  color: white;
+  background-color: #34495e;
   transition: 2s;
 }
