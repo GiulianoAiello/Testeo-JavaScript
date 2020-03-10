@@ -1,3 +1,12 @@
+p {
+  font-size: 15px;
+  font-family: Spartan;
+  color: #34495e;
+  user-select: none;
+}
+.mensaje {
+}
+
 .formulariovich {
   background-color: #34495e;
 }
@@ -17,10 +26,12 @@ body {
   min-width: 800px;
 }
 form {
+  transition: 2s;
   background-color: #fff;
   width: 20%;
-  margin-top: 175px;
+  margin-top: 110px;
   margin-right: 30px;
+  margin-bottom: 50px;
   padding-top: 60px;
   padding-bottom: 60px;
   text-align: center;

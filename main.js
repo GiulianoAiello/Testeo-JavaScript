@@ -56,15 +56,9 @@ function recogeDatos(evento) {
   var nombre = document.querySelector("#nombre").value;
   var fecha = document.querySelector("#fecha").value;
   var edad = 2020 - fecha;
-  console.log("Hola, " + nombre + " tu edad es de " + edad + " años");
+  var bienvenida = document.querySelector("#bienvenido");
+  var mensaje = "<p>Hola, " + nombre + " tu edad es de " + edad + " años</p>";
+  bienvenida.innerHTML = mensaje;
 }
 var myForm = document.querySelector("#formulario");
 myForm.addEventListener("submit", recogeDatos);
-
-var encabezado = document.querySelector("h1");
-encabezado.textContent = "de pana!!!";
-
-function saludar(mensaje, nombre) {
-  console.log(mensaje + nombre);
-}
-saludar("de pana", " de panasea");
