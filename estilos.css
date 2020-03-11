@@ -13,12 +13,17 @@ p {
 .cambia {
   background-image: url(https://wallpaperhd.wiki/wp-content/uploads/hd-antarctica-background-antarctica-4.jpg);
 }
-.imágen {
-  height: 600px;
-  margin-top: 50px;
-  margin-left: 100px;
+h1 {
+  top: 10rem;
+  left: 7rem;
+  margin-left: 5rem;
+  user-select: none;
   position: absolute;
-  opacity: 40%;
+  opacity: 70%;
+  color: white;
+  font-family: Spartan;
+  font-size: 8rem;
+  position: absolute;
 }
 body {
   background-image: url(https://cdn.suwalls.com/wallpapers/digital-art/penguins-in-antarctica-19179-2560x1440.jpg);
@@ -53,7 +58,7 @@ input {
   margin-left: 55px;
   margin-top: 10px;
   margin-bottom: 20px;
-  background-color: #fff;
+  background-color: white;
   border-style: solid;
   border-top: 0;
   border-left: 0;
@@ -62,7 +67,6 @@ input {
   border-radius: 20px;
   color: #34495e;
   border-color: #34495e;
-  user-select: contain;
 }
 
 button {

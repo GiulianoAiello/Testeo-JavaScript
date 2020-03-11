@@ -50,6 +50,13 @@ function cambiaColor() {
   this.classList.toggle("formulariovich");
 }
 document.querySelector("form").addEventListener("click", cambiaColor);
+== no diferencia entre tipos, === diferencia entre tipos y valores
+*/
+/*
+function edadovich() {
+  var depanaso = document.querySelector("#edadovich");
+  depanaso.textContent = "depana";
+}
 */
 function recogeDatos(evento) {
   evento.preventDefault();
@@ -57,7 +64,23 @@ function recogeDatos(evento) {
   var fecha = document.querySelector("#fecha").value;
   var edad = 2020 - fecha;
   var bienvenida = document.querySelector("#bienvenido");
-  var mensaje = "<p>Hola, " + nombre + " tu edad es de " + edad + " años</p>";
+  var depanasiacadea;
+  var mensaje;
+  if (edad > 18) {
+    var depanasiacadea = "Na wacho sos re viejardo";
+  } else if (edad === 16) {
+    var depanasiacadea = "Dea ni que fueras giuliano  ";
+  } else {
+    var depanasiacadea = "Dea ni que fueras charles  ";
+  }
+  mensaje =
+    "<p> hola," +
+    nombre +
+    ", tienes " +
+    edad +
+    " años, " +
+    depanasiacadea +
+    "</p>";
   bienvenida.innerHTML = mensaje;
 }
 var myForm = document.querySelector("#formulario");
