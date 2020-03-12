@@ -20,15 +20,17 @@
     <div id="bienvenido" class="mensaje"></div>
     <form id="formulario" method="post">
       <label
-        >Tu AKA: <input type="text" value="" id="nombre" maxlength="4"
+        >Tu AKA: <input type="text" value="" id="nombre" required maxlength="8"
       /></label>
       <label
         >Año en el que naciste:<input
           type="text"
           value=""
+          required
           id="fecha"
           minlength="4"
           maxlength="4"
+          max="2020"
       /></label>
       <label>
         Edad:

@@ -58,30 +58,59 @@ function edadovich() {
   depanaso.textContent = "depana";
 }
 */
+
 function recogeDatos(evento) {
   evento.preventDefault();
+
   var nombre = document.querySelector("#nombre").value;
   var fecha = document.querySelector("#fecha").value;
   var edad = 2020 - fecha;
-  var bienvenida = document.querySelector("#bienvenido");
-  var depanasiacadea;
-  var mensaje;
-  if (edad > 18) {
-    var depanasiacadea = "Na wacho sos re viejardo";
-  } else if (edad === 16) {
-    var depanasiacadea = "Dea ni que fueras giuliano  ";
+  if (nombre === "") {
+    var bienvenido = document.querySelector("#bienvenido");
+    var mensaje =
+      "<p>Debes completar los espacios en blancos antes de continuar</p>";
+    bienvenido.innerHTML = mensaje;
   } else {
-    var depanasiacadea = "Dea ni que fueras charles  ";
+    if (edad >= 8) {
+      if (edad === 16) {
+        var giuliano = "na, vos sos yo?";
+      } else {
+        var giuliano = "";
+      }
+      var bienvenido = document.querySelector("#bienvenido");
+      var mensaje =
+        "<p>Hola, " +
+        nombre +
+        " tienes " +
+        edad +
+        " años, " +
+        giuliano +
+        "</p>";
+      bienvenido.innerHTML = mensaje;
+    } else {
+      var bienvenido = document.querySelector("#bienvenido");
+      var mensaje =
+        "<p>No cumples con la edad mínima de 8 años para acceder al sitio web</p>";
+      bienvenido.innerHTML = mensaje;
+    }
   }
-  mensaje =
-    "<p> hola," +
-    nombre +
-    ", tienes " +
-    edad +
-    " años, " +
-    depanasiacadea +
-    "</p>";
-  bienvenida.innerHTML = mensaje;
+  // EJERCICIO: declara las variables necesarias (puedes necesitar
+  // más de una) para componer el mensaje de bienvenida
+
+  // EJERCICIO: crea un condicional que dé un mensaje u otro en
+  // función de la edad
+
+  // BONUS: si quieres, puedes comprobar si alguno de los campos
+  // está vacío y modificar el mensaje de bienvenida para pedir
+  // Que se rellene
+
+  // EJERCICIO: Realiza la composició del mensaje final y cárgalo
+  // en la variable que hayas preparado
+
+  // EJERCICIO: Añade el mensaje final como contenido HTML del
+  // nodo que hemos cargado en la variable bienvenida
 }
-var myForm = document.querySelector("#formulario");
-myForm.addEventListener("submit", recogeDatos);
+
+var miForm = document.querySelector("#formulario");
+
+miForm.addEventListener("submit", recogeDatos);
